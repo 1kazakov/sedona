@@ -2,11 +2,157 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
+    <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="page">
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" alt="Логотип «Седона»" src="#">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              О Седоне
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">
+              Гостиницы
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation-buttons">
+          <li class="navigation-buttons-item">
+            <a class="navigation-buttons-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-buttons-item">
+            <a class="navigation-buttons-link" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+          <li class="navigation-buttons-item">
+            <a class="navigation-buttons-link" href="#">
+                Хочу сюда!
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <section class="hero">
+        <h1 class="visually-hidden">Отдых в городке Седона</h1>
+        <img class="hero-background-img" src="#" alt="Городок Седона">
+        <ul class="title-list">
+          <li class="title-item">
+            <img src="#" alt="Welcome">
+          </li>
+          <li class="title-item">
+            <img src="#" alt="Gorgeous Sedona">
+          </li>
+          <li class="title-item">
+            <img src="#" alt="Sedona">
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <!--Здесь и ниже на странице сомневалась, нужно ли назначать классы для H2 и p, ведь оформление у всех одинаковое-->
+        <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3>Настоящий городок</h3>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="#" alt="Кафе в Седоне">
+          </li>
+          <li class="advantages-item">
+            <h3>Небольшая площадь</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-item">
+            <h3>Там есть мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="#" alt="Каньон в Седоне">
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="services-description">Опытный персонал и качественное обслуживание!</p>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <!--img не стала здесь добавлять, думаю, что иконки в услугах надо будет реализовать через css, но возможно ошибаюсь-->
+          </li>
+          <li class="services-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="services-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="footer-form">
+        <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
+        <p class="footer-form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="subscribe-email" placeholder="Ваш e-mail">
+          <button class="subscribe-button" type="submit">ПОДПИСАТЬСЯ</button>
+        </form>
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#">
+              <img src="#" alt="ВКонтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="#" alt="Telegram">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <img src="#" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a class="footer-logo" href="#">
+          <img class="page-footer-logo" alt="Логотип HTML Academy" src="#">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
