@@ -116,7 +116,8 @@
         <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
         <p class="footer-form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" name="subscribe-email" placeholder="Ваш e-mail" required>
+          <label class="visually-hidden"> for="newsletter-email">Email</label>
+          <input type="email" name="subscribe-email" placeholder="Ваш e-mail" id="newsletter-email" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
