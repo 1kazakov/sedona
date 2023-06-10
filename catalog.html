@@ -118,9 +118,9 @@
           </fieldset>
           <fieldset class="hotel-filter-group">
             <legend class="hotel-filter-title">Стоимость, ₽</legend>
-            <label class="visually-hidden" for="price-from">Стоимость, от</label>
+            <label class="visually-hidden" for="price-from">от</label>
             <input type="number" name="price-from" id="price-from" min="0" placeholder="0" value="0">
-            <label class="visually-hidden" for="price-to">Стоимость, до</label>
+            <label class="visually-hidden" for="price-to">до</label>
             <input type="number" name="price-to" id="price-to" max="9000" placeholder="9000" value="9000">
             <label class="visually-hidden" for="price-range">Ползунок стоимости</label>
             <input class="filter-range" type="range" id="price-range" min="0" max="9000" value="7000">
@@ -135,22 +135,29 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <!--в примере делают через <a>, сделала как в примере, но есть сомнения, что это всё же button-->
-        <a href="#" class="button-card">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button-screen">
-          <span class="visually-hidden">Показать на весь экран</span>
-        </a>
-        <a href="#" class="button-list">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <ul class="view-switcher-list">
+          <li class="view-switcher-item">
+            <a href="#" class="button-view-card">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="view-switcher-item">
+            <a href="#" class="button-view-screen">
+              <span class="visually-hidden">Показать на весь экран</span>
+            </a>
+          </li>
+          <li class="view-switcher-item">
+            <a href="#" class="button-view-list">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
+        </ul>
         <ul class="hotels-list">
           <li class="hotels-card">
             <a class="hotels-card-link" href="#">
               <img class="hotels-card-image" src="#" alt="">
             </a>
-            <a class="hotels-card-link">
+            <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             </a>
             <span class="hotels-card-type">Гостиница</span>
@@ -168,7 +175,7 @@
             <a class="hotels-card-link" href="#">
               <img class="hotels-card-image" src="#" alt="">
             </a>
-            <a class="hotels-card-link">
+            <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
             </a>
             <span class="hotels-card-type">Гостиница</span>
@@ -176,7 +183,7 @@
             <a class="button-more" href="#">
               Подробнее
             </a>
-            <button class="favorites-button" type="button">В избранное</button>
+            <button class="favorites-button add" type="button">В избранном</button>
             <div class="hotels-card-stars">
               <span class="visually-hidden">Класс: 4 звезды</span>
             </div>
@@ -186,7 +193,7 @@
             <a class="hotels-card-link" href="#">
               <img class="hotels-card-image" src="#" alt="">
             </a>
-            <a class="hotels-card-link">
+            <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-title">Desert Quail Inn</h3>
             </a>
             <span class="hotels-card-type">Гостиница</span>
@@ -204,7 +211,7 @@
             <a class="hotels-card-link" href="#">
               <img class="hotels-card-image" src="#" alt="">
             </a>
-            <a class="hotels-card-link">
+            <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-title">GreenTree Inn</h3>
             </a>
             <span class="hotels-card-type">Гостиница</span>
