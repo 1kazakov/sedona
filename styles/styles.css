@@ -15,6 +15,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -31,7 +32,7 @@ body {
   text-align: center;
 }
 
-.navigation-buttons-link {
+.buttons {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -133,14 +134,8 @@ body {
 }
 
 .search-button {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #756157;
 }
 
 .main-form {
@@ -165,12 +160,8 @@ body {
 }
 
 .subscribe-button {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   background: #82B3D3;
 }
 
