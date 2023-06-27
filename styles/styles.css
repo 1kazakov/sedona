@@ -20,14 +20,22 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
-  background: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -48,7 +56,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 339px;
+  width: 500px;
 }
 
 .navigation-buttons-list {
@@ -78,11 +86,6 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .hero {
@@ -143,6 +146,12 @@ body {
 
 .advantages-with-img {
   background: #82B3D3;
+  display: flex;
+  width: 100%;
+}
+
+.advantages-reverse {
+  flex-direction: row-reverse;
 }
 
 .advantages-with-img p,
@@ -316,9 +325,15 @@ body {
 }
 
 .hotel-filter-group {
-  width: 151px;
+  width: 170px;
   margin: 0;
   padding: 0;
+  margin-right: 50px;
+  border: none;
+}
+
+.hotel-filter-type {
+  margin-right: 120px;
 }
 
 .hotel-filter-price {
@@ -328,13 +343,6 @@ body {
 
 .hotel-filter {
   display: flex;
-}
-
-.hotel-filter-wrapper {
-  display: flex;
-  width: 371px;
-  margin-right: 140px;
-  justify-content: space-between;
 }
 
 .hotel-filter-title {
