@@ -74,16 +74,22 @@
                 <img src="images/cafe-sedona.jpg" width="800" height="385" alt="Кафе в Седоне">
               </li>
               <li class="advantages-item">
-                <h3>Небольшая площадь</h3>
-                <p>Все достопримечательности находятся очень близко</p>
+                <div class="advantages-wrapper">
+                  <h3>Небольшая площадь</h3>
+                  <p>Все достопримечательности находятся очень близко</p>
+                </div>
               </li>
               <li class="advantages-item advantages-special">
-                <h3>Красивая дорога</h3>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <div class="advantages-wrapper">
+                  <h3>Красивая дорога</h3>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
               </li>
               <li class="advantages-item">
-                <h3>Мало туристов</h3>
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
+                <div class="advantages-wrapper">
+                  <h3>Мало туристов</h3>
+                  <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
               </li>
               <li class="advantages-item advantages-with-img advantages-reverse">
                 <div class="advantages-wrapper">
@@ -115,7 +121,7 @@
           <section class="search">
             <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <p class="search-title">Заинтересовались?</p>
-            <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+            <p class="search-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц
               в Седоне</p>
             <a class="buttons search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
           </section>
@@ -124,15 +130,14 @@
             <p class="main-form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input type="email" name="subscribe-email" placeholder="Ваш e-mail" id="newsletter-email" required>
+              <input class="subscribe-field" type="email" name="subscribe-email" placeholder="Ваш e-mail" id="newsletter-email" required>
               <button class="buttons subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
       </main>
       <footer class="page-footer">
           <section class="footer-contacts">
-            <h2 class="visually-hidden" hidden>Контакты</h2>
-            <div class="page-footer-container">
+            <h2 class="visually-hidden">Контакты</h2>
               <ul class="social-list">
                 <li class="social-item">
                   <a href="https://vk.com/htmlacademy">
@@ -154,7 +159,6 @@
               <a class="footer-logo" href="#">
                 <span class="visually-hidden">Сделано в HTML Academy</span>
               </a>
-            </div>
           </section>
       </footer>
     </div>
