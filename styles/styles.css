@@ -141,6 +141,12 @@ body {
 .hero-description-img {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+.advantages {
+  padding-top: 69px;
 }
 
 .advantages {
@@ -313,7 +319,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   display: block;
-  width: 376px;
+  width: 276px;
   margin: 0 auto;
   padding: 8px 50px;
   border-radius: 4px;
