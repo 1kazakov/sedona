@@ -141,12 +141,6 @@ body {
 .hero-description-img {
   display: block;
   margin: 0 auto;
-  padding-top: 51px;
-  padding-bottom: 82px;
-}
-
-.advantages {
-  padding-top: 69px;
 }
 
 .advantages {
@@ -319,7 +313,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   display: block;
-  width: 276px;
+  width: 376px;
   margin: 0 auto;
   padding: 8px 50px;
   border-radius: 4px;
@@ -505,7 +499,6 @@ body {
 }
 
 .price-input {
-  box-sizing: border-box;
   width: 143px;
   padding: 12px 20px;
   border: none;
