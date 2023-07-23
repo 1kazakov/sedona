@@ -108,6 +108,24 @@ body {
   min-height: 20px;
 }
 
+.navigation-search {
+  background-image: url(../images/icons/search-icon.svg);
+  width: 44px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-favorites {
+  background-image: url(../images/icons/favorite-icon.svg);
+  width: 44px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
 .buttons {
   font-family: inherit;
   font-weight: 700;
@@ -285,6 +303,39 @@ body {
   color: #333333;
 }
 
+.services-housing::before {
+  content: "";
+  display: block;
+  background-image: url(../images/icons/home-icon.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 30px;
+}
+
+.services-food::before {
+  content: "";
+  display: block;
+  background-image: url(../images/icons/burger-icon.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 30px;
+}
+
+.services-souvenir::before {
+  content: "";
+  display: block;
+  background-image: url(../images/icons/gift-icon.svg);
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 30px;
+}
+
 .search {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -380,11 +431,41 @@ body {
   padding: 40px 70px 30px;
 }
 
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+
 .social-list {
+  display: flex;
   width: 142px;
   margin: 0 auto;
   list-style: none;
   padding: 0;
+}
+
+.social-vk::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 14px;
+  mask: url("../images/icons/vk-icon.svg");
+}
+
+.social-telegram::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 14px;
+  mask: url("../images/icons/telegram-icon.svg");
+}
+
+.social-youtube::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 14px;
+  mask: url("../images/icons/youtube-icon.svg");
 }
 
 .contacts-phone {
