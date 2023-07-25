@@ -959,6 +959,24 @@ body {
   background: #6C9E42;
 }
 
+.hotels-card-stars {
+  margin: 10px 0;
+  height: 17px;
+  background: url(../images/icons/star-icon.svg) space;
+}
+
+.four-stars {
+  width: 89px;
+}
+
+.three-stars {
+  width: 66px;
+}
+
+.two-stars {
+  width: 42px;
+}
+
 .pagination {
   margin: 0 auto;
   padding: 0;
