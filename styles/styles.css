@@ -103,6 +103,16 @@ body {
   text-align: center;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  background: rgba(104, 162, 202, 0.2);
+}
+
+.navigation-link:active {
+  background: rgba(104, 162, 202, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .navigation-link-current {
   position: relative;
 }
@@ -120,6 +130,15 @@ body {
 .navigation-buttons-link {
   display: block;
   padding: 22px 12px;
+}
+
+.navigation-search:hover,
+.navigation-favorites:hover,
+.navigation-search:focus,
+.navigation-favorites:focus,
+.navigation-search:active,
+.navigation-favorites:active {
+  transform: scale(1.2);
 }
 
 .navigation-search {
@@ -176,7 +195,7 @@ body {
   top: 11px;
   left: 20px;
   display: block;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   border-radius: 10px;
   color: #FFFFFF;
@@ -248,6 +267,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .advantages-item p {
@@ -270,16 +290,16 @@ body {
 
 .advantages-wrapper {
   padding: 103px 85px;
-  position: relative;
 }
 
-.advantages-wrapper::after {
+.advantages-wrapper h3::after  {
   content: "";
   width: 60px;
   height: 2px;
   position: absolute;
-  top: 188px;
-  left: 170px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.30);
 }
 
@@ -292,7 +312,7 @@ body {
   color: #FFFFFF
 }
 
-.advantages-with-img .advantages-wrapper::after {
+.advantages-with-img .advantages-wrapper h3::after {
   background-color: rgba(255, 255, 255, 0.30);
 }
 
@@ -507,37 +527,42 @@ body {
   padding: 0;
 }
 
-/*.social-vk::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 14px;
-  mask: url("../images/icons/vk-icon.svg");
-}
-
-.social-telegram::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 14px;
-  mask: url("../images/icons/telegram-icon.svg");
-}
-
-.social-youtube::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 14px;
-  mask: url("../images/icons/youtube-icon.svg");
-}*/
-
 .social-vk {
+  display: block;
+  width: 47px;
+  height: 40px;
   -webkit-mask-image: url("../images/icons/vk-icon.svg");
-          mask-image: url("../images/icons/vk-icon.svg");
+  mask-image: url("../images/icons/vk-icon.svg");
   -webkit-mask-position: center;
-          mask-position: center;
+  mask-position: center;
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: green;
+}
+
+.social-telegram {
+  display: block;
+  width: 47px;
+  height: 40px;
+  -webkit-mask-image: url("../images/icons/telegram-icon.svg");
+  mask-image: url("../images/icons/telegram-icon.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: green;
+}
+
+.social-youtube {
+  display: block;
+  width: 47px;
+  height: 40px;
+  -webkit-mask-image: url("../images/icons/youtube-icon.svg");
+  mask-image: url("../images/icons/vk-icon.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   background-color: green;
 }
 
@@ -563,7 +588,15 @@ body {
 .footer-logo {
   display: block;
   width: 115px;
+  height: 33px;
   margin: 0 auto;
+  -webkit-mask-image: url("../images/logo-sedona.svg");
+  mask-image: url("../images/logo-sedona.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: green;
 }
 
 
