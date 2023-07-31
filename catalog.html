@@ -80,43 +80,49 @@
                     <ul class="hotel-filter-list">
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="pool" checked>
-                          Бассейн
+                          <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
                         </label>
                       </li>
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="parking" checked>
-                          Парковка
+                          <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                         </label>
                       </li>
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="wi-fi">
-                          Wi-Fi
+                          <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
                   <fieldset class="hotel-filter-group hotel-filter-type">
                     <legend class="hotel-filter-title">Тип Жилья:</legend>
-                    <ul class="catalog-filter-list">
+                    <ul class="hotel-filter-list">
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                          Гостиница
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="hotel" checked>
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
                         </label>
                       </li>
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing-type" value="motel">
-                          Мотель
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="motel">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
                         </label>
                       </li>
                       <li class="hotel-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="housing-type" value="apartments">
-                          Апартаменты
+                          <input class="visually-hidden control-input" type="radio" name="housing-type" value="apartments">
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
@@ -124,13 +130,21 @@
                 <fieldset class="hotel-filter-group hotel-filter-price">
                   <legend class="hotel-filter-title">Стоимость, ₽:</legend>
                   <div class="filter-price-wrapper">
-                    <label class="visually-hidden" for="price-from">от</label>
-                    <input class="price-input price-min" type="number" name="price-from" id="price-from" min="0" placeholder="0" value="0">
-                    <label class="visually-hidden" for="price-to">до</label>
-                    <input class="price-input price-max" type="number" name="price-to" id="price-to" max="9000" placeholder="9000" value="9000">
+                    <label class="filter-price price-from" for="price-from">от</label>
+                    <input class="price-input input-price-min" type="number" name="price-from" id="price-from" min="0" placeholder="0" value="0">
+                    <label class="filter-price price-to" for="price-to">до</label>
+                    <input class="price-input input-price-max" type="number" name="price-to" id="price-to" max="9000" placeholder="9000" value="9000">
                   </div>
-                  <label class="visually-hidden" for="price-range">Ползунок стоимости</label>
-                  <input class="filter-range" type="range" id="price-range" min="0" max="9000" value="7000">
+                  <div class="range">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="filter-buttons-wrapper">
                   <button class="buttons filter-buttons apply-button" type="submit">Применить</button>
@@ -145,6 +159,7 @@
               <p class="found-hotels-title">Найдено гостиниц: 38</p>
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
+                <option value="rating">Сначала с высоким рейтингом</option>
               </select>
               <ul class="view-switcher-list">
                 <li class="view-switcher-item">
