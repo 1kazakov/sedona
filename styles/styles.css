@@ -541,6 +541,14 @@ body {
   padding: 0;
 }
 
+.social-network:hover {
+  background-color: #68A2CA;
+}
+
+.social-network:focus {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
 .social-vk {
   display: block;
   width: 47px;
@@ -551,7 +559,7 @@ body {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: green;
+  background-color: #83b3d3;
 }
 
 .social-telegram {
@@ -564,7 +572,7 @@ body {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: green;
+  background-color: #83b3d3;
 }
 
 .social-youtube {
@@ -577,7 +585,7 @@ body {
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: green;
+  background-color: #83b3d3;
 }
 
 .contacts-phone {
@@ -604,14 +612,24 @@ body {
   width: 115px;
   height: 33px;
   margin: 0 auto;
-  -webkit-mask-image: url("../images/logo-sedona.svg");
-  mask-image: url("../images/logo-sedona.svg");
+  -webkit-mask-image: url("../images/logo-html-academy.svg");
+  mask-image: url("../images/logo-html-academy.svg");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  background-color: green;
+  background-color: #000000;
 }
+
+.footer-logo:hover,
+.footer-logo:focus {
+  background-color: #756157;
+}
+
+.footer-logo:active {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
 
 /*Модальное окно*/
 .modal-show {
@@ -918,15 +936,11 @@ body {
 }
 
 .breadcrumbs-link:hover {
-  opacity: 0.6;
-}
-
-.breadcrumbs-link:focus {
-  outline: none;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-home {
@@ -935,6 +949,14 @@ body {
   background-image: url("../images/icons/breadcrumbs-home-icon.svg");
   background-repeat: no-repeat;
   background-position: center 3px;
+}
+
+.breadcrumbs-home:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-home:active {
+  opacity: 0.3;
 }
 
 .hotel-list {
