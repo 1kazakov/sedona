@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
+  <head">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page">
     <div class="page-container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип «Седона»">
@@ -57,13 +58,13 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
-        <section class="hero">
+      <main class="main-container main-index" data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">Отдых в городке Седона</h1>
           <img class="hero-description-img" src="images/index-welcome.svg" width="458" height="352"
             alt="Добро пожаловать в великолепную Седону"><!--для 3-х векторных изображений, фоновое через css-->
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
@@ -101,7 +102,7 @@
             </li>
           </ul>
         </section>
-        <section class="services">
+        <section class="services" data-test="service">
           <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="services-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="services-list">
@@ -119,15 +120,15 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="search-title">Заинтересовались?</p>
           <p class="search-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
             гостиниц
             в Седоне</p>
-          <a class="buttons search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <a class="buttons search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
-        <section class="main-form">
+        <section class="main-form" data-test="subscribe">
           <h2 class="main-form-title">Подпишитесь на рассылку</h2>
           <p class="main-form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -138,7 +139,7 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="social-list">
@@ -158,17 +159,19 @@
               </a>
             </li>
           </ul>
-          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-          <a class="footer-logo" href="#">
+          <div class="contacts-phone-wrapper">
+            <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </div>
+          <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
             <span class="visually-hidden">Сделано в HTML Academy</span>
           </a>
         </section>
       </footer>
       <!--Modal-->
-      <div class="modal-container modal-show">
+      <div class="modal-container modal-close">
         <div class="modal modal-search">
           <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden">Закрыть окно</span>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -188,9 +191,13 @@
                 <div class="modal-fields-number modal-field-adults">
                   <label class="modal-label" for="adults">Взрослые:</label>
                   <div class="number-button-wrapper">
-                    <button class="input-number-button reduce-button" type="button" class=""></button>
+                    <button class="input-number-button reduce-button" type="button">
+                      <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    </button>
                     <input class="modal-input input-number" type="number" name="adults" id="adults" min="1" placeholder="2" value="2">
-                    <button class="input-number-button increase-button" type="button" class=""></button>
+                    <button class="input-number-button increase-button" type="button">
+                      <span class="visually-hidden">Увеличить количество взрослых</span>
+                    </button>
                   </div>
                 </div>
                 <div class="modal-fields-number modal-field-child">
@@ -202,18 +209,23 @@
                     <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </div>
                   <div class="number-button-wrapper">
-                    <button class="input-number-button reduce-button" type="button"></button>
+                    <button class="input-number-button reduce-button" type="button">
+                      <span class="visually-hidden">Уменьшить количество детей</span>
+                    </button>
                     <input class="modal-input input-number" type="number" name="child" id="child" min="0" placeholder="2" value="2">
-                    <button class="input-number-button increase-button" type="button"></button>
+                    <button class="input-number-button increase-button" type="button">
+                      <span class="visually-hidden">Увеличить количество детей</span>
+                    </button>
                   </div>
                 </div>
               </div>
-              <input class="buttons modal-button" type="submit" value="Найти">
+              <button class="buttons modal-button" type="button">Найти</button>
             </form>
           </section>
         </div>
       </div>
     </div>
+    <script src="scripts/open.js"></script>
   </body>
 
 </html>
