@@ -1298,9 +1298,10 @@ body {
   width: 292px;
   margin-right: 70px;
   margin-left: auto;
-  padding: 12px 18px;
+  padding: 14px 20px;
   border-radius: 4px;
-  border: 2px solid #E5E5E5;
+  border: none;
+  outline: 2px solid #E5E5E5;
   position: relative;
   background-image: url(../images/icons/down-icon.svg);
   background-repeat: no-repeat;
@@ -1417,19 +1418,20 @@ body {
 .hotels-card-price {
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   text-align: right;
   color: #333333;
   width: 140px;
-  letter-spacing: -0.01em;
 }
 
 .hotels-card-rating {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #333333;
   width: 140px;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 22px 8px;
   background-color: #f2f2f2;
   border-radius: 4px;
   margin: 0;
