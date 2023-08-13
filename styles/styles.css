@@ -242,14 +242,14 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 620px;
+  width: 627px;
   margin: 0 auto 25px;
 }
 
 .advantages-description {
   text-align: center;
   color: #333333;
-  width: 651px;
+  width: 655px;
   margin: 0 auto;
   margin-bottom: 90px;
 }
@@ -290,7 +290,7 @@ body {
 }
 
 .advantages-wrapper {
-  padding: 112px 85px;
+  padding: 112px 84px;
   min-width: 400px;
 }
 
@@ -590,7 +590,7 @@ body {
   width: 47px;
   height: 40px;
   -webkit-mask-image: url("../images/icons/youtube-icon.svg");
-  mask-image: url("../images/icons/vk-icon.svg");
+  mask-image: url("../images/icons/youtube-icon.svg");
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
