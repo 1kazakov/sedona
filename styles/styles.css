@@ -466,7 +466,8 @@ body {
 }
 
 .main-form-title {
-  margin: 0;
+  margin: 0 auto;
+  width: 475px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -752,6 +753,12 @@ body {
   margin: 0;
 }
 
+.input-number::-moz-outer-spin-button,
+.input-number::-moz-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .input-date {
   background-image: url(../images/icons/calendar-icon.svg);
   background-repeat: no-repeat;
@@ -828,6 +835,7 @@ body {
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   background-color: rgba(117, 97, 87, 0.30);
 }
 
@@ -1398,6 +1406,7 @@ body {
 .hotels-card-link {
   grid-column: 1 / -1;
   text-decoration: none;
+  width: fit-content;
 }
 
 .hotels-card-title {
