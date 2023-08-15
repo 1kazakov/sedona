@@ -51,6 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   min-height: 100%;
   background-color: #ffffff;
@@ -552,11 +553,31 @@ body {
   margin: 0;
 }
 
+.social-item {
+  position: relative;
+}
+
 .social-network:hover {
   background-color: #68A2CA;
 }
 
 .social-network:focus {
+  background-color: #68A2CA;
+}
+
+.social-item:has(.social-network:focus)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 46px;
+  width: 46px;
+  border-radius: 4px;
+  border: 2px solid #000000;
+}
+
+.social-network:active {
   background-color: rgba(104, 162, 202, 0.3);
 }
 
@@ -753,10 +774,8 @@ body {
   margin: 0;
 }
 
-.input-number::-moz-outer-spin-button,
-.input-number::-moz-inner-spin-button {
-  appearance: none;
-  margin: 0;
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .input-date {
@@ -801,15 +820,6 @@ body {
   line-height: 20px;
 }
 
-.input-number-button {
-  margin: 0;
-  padding: 14px 10px;
-  cursor: pointer;
-  width: 40px;
-  height: 48px;
-  border: none;
-}
-
 .input-number:hover,
 .input-number:focus,
 .input-number:active {
@@ -817,19 +827,41 @@ body {
   color: #000000;
 }
 
-.input-number-button:hover {
+.input-number-button {
+  margin: 0;
+  padding: 14px 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 48px;
+  border: none;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.input-number-button:hover::before {
   background-color: rgba(0, 0, 0, 1);
 }
 
 .input-number-button:focus {
+  outline: none;
+}
+
+.input-number-button:focus::before {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.input-number-button:active {
+.input-number-button:active::before {
   background-color: rgba(117, 97, 87, 0.30);
 }
 
-.reduce-button {
+.input-number-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 2px;
   -webkit-mask-image: url("../images/icons/minus-icon.svg");
   mask-image: url("../images/icons/minus-icon.svg");
   -webkit-mask-position: center;
@@ -839,7 +871,8 @@ body {
   background-color: rgba(117, 97, 87, 0.30);
 }
 
-.increase-button {
+.increase-button::before {
+  height: 14px;
   -webkit-mask-image: url("../images/icons/plus-icon.svg");
   mask-image: url("../images/icons/plus-icon.svg");
   -webkit-mask-position: center;
@@ -847,6 +880,28 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   background-color: rgba(117, 97, 87, 0.30);
+}
+
+.reduce-button:focus::after,
+.increase-button:focus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  height: 26px;
+  width: 26px;
+  border-radius: 4px;
+  border: 3px solid #82B3D3;
+}
+
+.number-button-wrapper:has(.increase-button:focus)::after {
+  right: 7px;
+  left: initial;
+}
+
+.modal-input.input-number {
+  z-index: 1;
 }
 
 .tooltip {
@@ -1036,6 +1091,7 @@ body {
   padding: 0;
   margin-right: 50px;
   border: none;
+  word-break: break-all;
 }
 
 .hotel-filter-type {
@@ -1077,6 +1133,7 @@ body {
 }
 
 .control {
+  display: block;
   position: relative;
   padding-left: 36px;
 }
@@ -1242,7 +1299,7 @@ body {
 .filter-buttons {
   border: none;
   border-radius: 4px;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .apply-button {
@@ -1452,7 +1509,7 @@ body {
   border-radius: 4px;
   display: inline-block;
   cursor: pointer;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .favorites-button {
@@ -1511,7 +1568,7 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 60px;
-  min-height: 60px;
+  height: 60px;
   padding: 0 12px;
   font-weight: 700;
   font-size: 20px;
@@ -1525,11 +1582,13 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background: #68A2CA;
+  outline: 1px solid #82B3D3;
 }
 
 .pagination-link:active {
   background: #82B3D3;
   color: rgba(255, 255, 255, 0.30);
+  outline: none;
 }
 
 .pagination-link-absent {
@@ -1551,6 +1610,7 @@ body {
 .pagination-current:active {
   background: #F2F2F2;
   color: #000000;
+  outline: none;
 }
 
 
