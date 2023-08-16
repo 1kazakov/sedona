@@ -648,6 +648,16 @@ body {
   position: relative;
   width: 115px;
   height: 33px;
+}
+
+.footer-logo::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 33px;
   -webkit-mask-image: url("../images/logo-html-academy.svg");
   mask-image: url("../images/logo-html-academy.svg");
   -webkit-mask-position: center;
@@ -657,27 +667,14 @@ body {
   background-color: #000000;
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
+.footer-logo:hover::before,
+.footer-logo:focus::before {
   background-color: #756157;
 }
 
-.footer-logo:focus::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 60px;
-  width: 150px;
-  border-radius: 4px;
-  border: 2px solid #000000;
-}
-
-.footer-logo:active {
+.footer-logo:active::before {
   background-color: rgba(117, 97, 87, 0.3);
 }
-
 
 /*Модальное окно*/
 
