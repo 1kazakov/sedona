@@ -645,6 +645,7 @@ body {
 
 .footer-logo {
   display: block;
+  position: relative;
   width: 115px;
   height: 33px;
   -webkit-mask-image: url("../images/logo-html-academy.svg");
@@ -659,6 +660,18 @@ body {
 .footer-logo:hover,
 .footer-logo:focus {
   background-color: #756157;
+}
+
+.footer-logo:focus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 150px;
+  border-radius: 4px;
+  border: 2px solid #000000;
 }
 
 .footer-logo:active {
@@ -914,15 +927,11 @@ input[type='number'] {
   background-color: #83b3d3;
   margin: 0;
   display: block;
-  padding: 7px 12px;
+  padding: 13px 13px;
   border-radius: 50%;
-}
-
-.tooltip-icon {
   background-image: url(../images/icons/information-icon.svg);
-  width: 2px;
-  height: 12px;
-  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tooltip-text {
